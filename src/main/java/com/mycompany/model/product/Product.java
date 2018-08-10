@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="MwbProduct")
+@Table(name="Production.Product")
 public class Product
 {
 	@Id
@@ -57,7 +57,7 @@ public class Product
 	@Column(name="SizeUnitMeasureCode")
 	private String sizeUnitMeasureCode;
 
-	@Column(name="Size_")
+	@Column(name="Size")
 	private String size;
 
 	@Column(name="ListPrice")
@@ -76,10 +76,10 @@ public class Product
 	private String color;
 
 	@Column(name="FinishedGoodsFlag")
-	private Integer finishedGoodsFlag;
+	private Boolean finishedGoodsFlag;
 
 	@Column(name="MakeFlag")
-	private Integer makeFlag;
+	private Boolean makeFlag;
 
 	@Column(name="ProductNumber")
 	private String productNumber;
@@ -297,22 +297,22 @@ public class Product
 		this.color = color;
 	}
 
-	public Integer getFinishedGoodsFlag()
+	public Boolean getFinishedGoodsFlag()
 	{
 		return finishedGoodsFlag;
 	}
 
-	public void setFinishedGoodsFlag(Integer finishedGoodsFlag)
+	public void setFinishedGoodsFlag(Boolean finishedGoodsFlag)
 	{
 		this.finishedGoodsFlag = finishedGoodsFlag;
 	}
 
-	public Integer getMakeFlag()
+	public Boolean getMakeFlag()
 	{
 		return makeFlag;
 	}
 
-	public void setMakeFlag(Integer makeFlag)
+	public void setMakeFlag(Boolean makeFlag)
 	{
 		this.makeFlag = makeFlag;
 	}
