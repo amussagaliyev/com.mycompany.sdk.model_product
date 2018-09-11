@@ -1,10 +1,11 @@
 package com.mycompany.model.product;
 
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.mycompany.model.core.AbstractDao;
-
 @Repository
-public class ProductDao extends AbstractDao<Product>
+public interface ProductDao extends CrudRepository<Product, Integer>
 {
+
 }
+
